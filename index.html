@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Félicité Gary">
+  <meta name="keywords" content="Marseille,OM,Jul,Bandite,pétanque,pastis">
+  <meta name="date" content="2023-12-16T05:00:00+01:00">
+  <title>Marseille</title>
+  <meta name="description"
+    content="Située sur la côte méditerranéenne de la France, Marseille est la deuxième plus grande ville du pays, après
+      Paris. Decouvrez la beauté de cette ville à travers ses lieux incontournables,sa culture ainsi que les expressions marseillaises afin de ne pas être perdu lors de conversations entre deux pastis." />
+  <link href="style.css" rel="stylesheet" type="text/css" id="style" />
+  <link href="img/favicon.ico" rel="icon" />
+</head>
+
+<body>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="https://replit.com/public/js/replit-badge.js" defer></script>
+  <header id="imageAccueil">
+    <figure id="chargementimg">
+      <img src="./img/accueil/img1.jpeg" alt="Photo de Marseille">
+      <img src="./img/accueil/img2.jpeg" alt="Photo de Marseille">
+      <img src="./img/accueil/img3.jpeg" alt="Photo de Marseille">
+    </figure>
+
+  </header>
+  <nav>
+    <div id="open-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id='close-menu' class='hidden'>
+      <span></span>
+      <span></span>
+    </div>
+    <div id="deroulement">
+      <div class="menu-content">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="Lieux.html">Lieux</a></li>
+          <li><a href="Culture.html">Culture</a></li>
+          <li><a href="Expressions.html">Expression</a></li>
+          <li><a><button id='changerMode' onclick="changerFeuilleStyle()">Mode</button></a></li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+
+  <h1 id="Titre">Bienvenue à Marseille<br> Entre Ciel, Mer et Culture</h1>
+  <a href="#" id="boutonHaut" class="hidden"><img src="img/monterPage/fleche.png"> </a>
+  </a>
+  <article class="description">
+    <h2 id="otherTitre">Découvrez Marseille</h2>
+    <p>Située sur la côte méditerranéenne de la France, Marseille est la deuxième plus grande ville du pays, après
+      Paris. Elle est nichée au cœur de la région de Provence-Alpes-Côte d'Azur.
+      Fondée par les Grecs il y a plus de 2 600 ans, Marseille est l'une des plus anciennes villes d'Europe. Son
+      port
+      a toujours été un point de rencontre culturel et commercial majeur, influencé par les civilisations grecques,
+      romaines, arabes et provençales.</p>
+    <p>Grâce à notre site découvrez la beauté de cette ville à travers ses lieux incontournables, sa culture ainsi que
+      les expressions marseillaises afin de ne pas être perdu lors de conversations entre deux pastis. Tia capté le
+      sang?
+      <br><br>Voici une petite vidéo intitulée "La vérité sur Marseille" réalisé par le Youtubeur Luch
+      présentant
+      la face cachée de cette ville.<br>Vous pourrez retrouver la vidéo complète sur
+      <a href="https://www.youtube.com/watch?v=hXkyfJKTLKk&t=0s">ce lien</a>.<br><br>
+
+      <video controls="controls">
+        <source src="vodMars.mp4" type="video/mp4">
+      </video>
+    </p>
+  </article>
+  </div>
+  <article>
+    <h2 class="titreSection">Galerie</h2>
+    <div class="galerie">
+
+      <div class="parent">
+        <img src="./img/imageDeroulante/img1.jpeg" alt="photo galerie">
+        <h3 class="enfant">Saint Cyr</h3>
+      </div>
+
+
+      <div class="parent">
+        <img src="./img/imageDeroulante/img2.jpeg" alt="photo galerie">
+
+        <h3 class="enfant">Malmousque</h3>
+      </div>
+
+
+      <div class="parent">
+        <img src="./img/imageDeroulante/img3.jpeg" alt="photo galerie">
+
+        <h3 class="enfant">Metro Marseillais</h3>
+      </div>
+
+      <div class="parent">
+        <img src="./img/imageDeroulante/img4.jpeg" alt="photo galerie">
+
+        <h3 class="enfant">Malmousque</h3>
+      </div>
+
+      <div class="parent">
+        <img src="./img/imageDeroulante/img5.jpeg" alt="photo galerie">
+
+        <h3 class="enfant">Corniche</h3>
+      </div>
+      <div class="parent">
+        <img src="./img/imageDeroulante/img6.jpeg" alt="photo galerie">
+        <h3 class="enfant">Plage du Prophète</h3>
+      </div>
+      <div class="parent">
+        <img src="./img/imageDeroulante/img7.jpeg" alt="photo galerie">
+
+        <h3 class="enfant">Plage du Prado</h3>
+      </div>
+      <div class="parent">
+        <img src="./img/imageDeroulante/img8.jpeg" alt="photo galerie">
+
+        <h3 class="enfant">Quartier du Panier</h3>
+      </div>
+    </div>
+  </article>
+  <article class='formulaire'>
+    <h3 class='sousTitre'>Laissez nous votre avis !</h3>
+    <form id="form" action="mailto:garyfefe@gmail.com" method="post" enctype="text/plain">
+      <p>
+        <label for="prenom">Prénom</label>
+        <input id="prenom" type="text" name="prenom" value=" " required="required">
+        <label for="nom">Nom</label>
+        <input id="nom" type="text" name="nom" value=" " required="required"><br>
+        <label for="email">Email</label>
+        <input id="mail" type="email" name="mail" value=" " required="required"><br>
+
+        <textarea name="impression" rows="2" cols="50" required="required">
+Votre impression sur Marseille...
+   </textarea><br>
+        <input id='enregistre' type="submit" value="Enregistrer">
+      </p>
+  </article>
+  </form>
+  <footer>
+    <h3 class='sousTitre'>NOUS CONTACTER SUR</h3>
+    <ul class="contactlist">
+      <li>
+        <figure>
+          <figcaption><img src="img/contact/telephone.png" alt="telephone" title="0491803889"></figcaption>
+          <!--Numero (en vrai c'est le numero de la spa)-->
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption><a href="https://www.facebook.com/felicite.gary?locale=fr_FRm"> <img
+                src="img/contact/facebook.png" alt="facebook"> </a>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption><a
+              href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnptqWwXRcDTJdSzJCXNncmzRwNNkMtHJSfbdlNHWxlTClxFhSjXCwwJmgFMTMmhhjFJGc"><img
+                src="img/contact/email-logo-png-27.png" alt="mail" title="felicite.garyy@gmail.com"></a> </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption><a href="https://www.instagram.com/felicite.gry/"><img
+                src="img/contact/Instagram_logo_2022.svg.png" alt="instagram"></a></figcaption>
+        </figure>
+      </li>
+    </ul>
+  </footer>
+</body>
+
+</html>
