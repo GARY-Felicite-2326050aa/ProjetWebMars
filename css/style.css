@@ -91,12 +91,12 @@ nav {
 #deroulement {
   display: none;
   position: fixed;
-  top: 40px;
+  top: 0;
   left: 0;
   right: 0;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 800;
 }
 
 #deroulement .menu-content {
@@ -127,7 +127,6 @@ nav {
   text-transform: uppercase;
   transition: .3s ease;
 }
-
 
 
 #open-menu {
@@ -231,7 +230,7 @@ nav {
 }
 
 .galerie img {
-  width: 100%;
+  width: 300px;
   height: 100%;
 }
 
@@ -404,7 +403,7 @@ form input:hover {
   }
 
   header {
-    height: 30vh;
+    height: 40vh;
   }
 
 }
