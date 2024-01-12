@@ -273,6 +273,10 @@ nav {
   flex-wrap: wrap;
 }
 
+.contactlist li {
+  margin: -1em;
+}
+
 .contactlist figure img {
   height: 1.8rem;
 }
@@ -298,7 +302,7 @@ form {
 
 }
 
-.formulaire h3 {
+.formulaire .sousTitre {
   margin-left: 10%;
 }
 
@@ -405,6 +409,11 @@ form input:hover {
   header {
     height: 40vh;
   }
+
+  .formulaire .sousTitre {
+    margin: 1em;
+  }
+
 
 }
 
