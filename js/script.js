@@ -8,7 +8,7 @@ function next() {
   else
     I = 1;
   let Img = document.getElementById("imageAccueil")
-  Img.style.backgroundImage = "url(\"../img/accueil/img" + I + ".jpeg\")";
+  Img.style.backgroundImage = "url(\"./img/accueil/img" + I + ".jpeg\")";
   setTimeout(next, 4000);
 }
 window.addEventListener("DOMContentLoaded", (event) => {
