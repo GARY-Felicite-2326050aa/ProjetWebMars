@@ -79,6 +79,7 @@ function changerFeuilleStyle() {
   localStorage.setItem("styleChoisi", nouveauStyle);
 }
 
+
 window.onload = function() {
   var styleSauvegarde = localStorage.getItem("styleChoisi");
   var lienFeuilleStyle = document.getElementById("style");
@@ -87,9 +88,9 @@ window.onload = function() {
   var nomFichier = pageActuelle.substring(pageActuelle.lastIndexOf("/") + 1);
 
   if (styleSauvegarde && lienFeuilleStyle) {
-    if (styleSauvegarde === "../css/style.css" && nomFichier === "index.html") {
+    if (styleSauvegarde === "../css/style.css" && (nomFichier === "index.html" || nomFichier === "")) {
       lienFeuilleStyle.setAttribute("href", "./css/style.css");
-    } else if (styleSauvegarde === "../css/style2.css" && nomFichier === "index.html") {
+    } else if (styleSauvegarde === "../css/style2.css" &&  (nomFichier === "index.html" || nomFichier === "")) {
       lienFeuilleStyle.setAttribute("href", "./css/style2.css");
     } else if (styleSauvegarde === "./css/style.css" && nomFichier !== "index.html") {
       lienFeuilleStyle.setAttribute("href", "../css/style.css");
@@ -100,6 +101,7 @@ window.onload = function() {
     }
   }
 };
+
 
 
 
