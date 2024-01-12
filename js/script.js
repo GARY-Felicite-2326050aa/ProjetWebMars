@@ -64,15 +64,16 @@ bouton2.addEventListener('click', function() {
 
 /*changer style*/
 
+
 function changerFeuilleStyle() {
   var lienFeuilleStyle = document.getElementById("style");
   var styleActuel = lienFeuilleStyle.getAttribute("href");
-
+  var cheminRelatif = styleActuel.startsWith('../') ? '../' : ''; // Correction du chemin relatif
   var nouveauStyle;
-  if (styleActuel === '../css/style.css') {
-    nouveauStyle = '../css/style2.css';
+  if (styleActuel === cheminRelatif + 'css/style.css') {
+    nouveauStyle = cheminRelatif + 'css/style2.css';
   } else {
-    nouveauStyle = '../css/style.css';
+    nouveauStyle = cheminRelatif + 'css/style.css';
   }
 
   lienFeuilleStyle.setAttribute("href", nouveauStyle);
@@ -88,8 +89,6 @@ window.onload = function() {
     lienFeuilleStyle.setAttribute("href", styleSauvegarde);
   }
 };
-
-
 
 
 
