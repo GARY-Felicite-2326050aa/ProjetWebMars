@@ -295,6 +295,11 @@ nav {
   flex-wrap: wrap;
 }
 
+.contactlist li {
+  margin: -1em;
+}
+
+
 .contactlist figure img {
   height: 1.8rem;
 
