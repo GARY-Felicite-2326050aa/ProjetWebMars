@@ -68,7 +68,7 @@ bouton2.addEventListener('click', function() {
 function changerFeuilleStyle() {
   var lienFeuilleStyle = document.getElementById("style");
   var styleActuel = lienFeuilleStyle.getAttribute("href");
-  var cheminRelatif = styleActuel.startsWith('../') ? '../' : ''; // Correction du chemin relatif
+  var cheminRelatif = styleActuel.startsWith('../') ? '../' : './'; // Correction du chemin relatif
   var nouveauStyle;
   if (styleActuel === cheminRelatif + 'css/style.css') {
     nouveauStyle = cheminRelatif + 'css/style2.css';
