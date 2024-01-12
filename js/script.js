@@ -68,29 +68,17 @@ bouton2.addEventListener('click', function() {
 function changerFeuilleStyle() {
   var lienFeuilleStyle = document.getElementById("style");
   var styleActuel = lienFeuilleStyle.getAttribute("href");
-  var cheminRelatif =  getCheminRelatif();
-  if (styleActuel === cheminRelatif + 'css/style.css') {
-    nouveauStyle = cheminRelatif + 'css/style2.css';
+
+  if (styleActuel === 'css/style.css') {
+    nouveauStyle =  './css/style2.css';
   } else {
-    nouveauStyle = cheminRelatif + 'css/style.css';
+    nouveauStyle =  './css/style.css';
   }
 
   lienFeuilleStyle.setAttribute("href", nouveauStyle);
   localStorage.setItem("styleChoisi", nouveauStyle);
 }
 
-function getCheminRelatif() {
-  // Obtient le chemin relatif en fonction de l'emplacement du script
-  var scriptPath = document.querySelector('script[src*="script.js"]').src;
-  var pagePath = window.location.href;
-
-  var scriptFolder = scriptPath.substring(0, scriptPath.lastIndexOf('/'));
-  var pageFolder = pagePath.substring(0, pagePath.lastIndexOf('/'));
-
-  var relativePath = scriptFolder.substring(pageFolder.length + 1);
-
-  return relativePath === '' ? './' : '../' + relativePath + '/';
-}
 window.onload = function() {
   var styleSauvegarde = localStorage.getItem("styleChoisi");
   var lienFeuilleStyle = document.getElementById("style");
