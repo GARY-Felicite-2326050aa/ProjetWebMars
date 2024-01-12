@@ -69,7 +69,7 @@ function changerFeuilleStyle() {
   var lienFeuilleStyle = document.getElementById("style");
   var styleActuel = lienFeuilleStyle.getAttribute("href");
 
-  if (styleActuel === 'css/style.css') {
+  if (styleActuel === './css/style.css') {
     nouveauStyle =  './css/style2.css';
   } else {
     nouveauStyle =  './css/style.css';
