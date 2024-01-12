@@ -453,6 +453,9 @@ form input:hover {
   header {
     height: 40vh;
   }
+  .formulaire .sousTitre {
+  margin: 1em;
+  }
 }
 
 
