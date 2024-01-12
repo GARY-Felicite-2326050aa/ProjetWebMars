@@ -10,20 +10,18 @@
   <title>Marseille</title>
   <meta name="description"
     content="Située sur la côte méditerranéenne de la France, Marseille est la deuxième plus grande ville du pays, après
-      Paris. Decouvrez la beauté de cette ville à travers ses lieux incontournables,sa culture ainsi que les expressions marseillaises afin de ne pas être perdu lors de conversations entre deux pastis." />
-  <link href="style.css" rel="stylesheet" type="text/css" id="style" />
-  <link href="img/favicon.ico" rel="icon" />
+      Paris. Decouvrez la beauté de cette ville à travers ses lieux incontournables,sa culture ainsi que les expressions marseillaises afin de ne pas être perdu lors de conversations entre deux pastis.">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" id="style">
+  <link href="img/favicon.ico" rel="icon">
 </head>
 
 <body>
-  <script src="//code.jquery.com/jquery-1.12.0.min.js" defer></script>
-  <script src="script.js" defer></script>
-  <script src="https://replit.com/public/js/replit-badge.js" defer></script>
+
+
   <header id="imageAccueil">
     <figure id="chargementimg">
       <img src="./img/accueil/img1.jpeg" alt="Photo de Marseille">
-      <img src="./img/accueil/img2.jpeg" alt="Photo de Marseille">
-      <img src="./img/accueil/img3.jpeg" alt="Photo de Marseille">
+      <img src="./img/accueil/img2.jpeg" alt="Photo de Marseille" loading="lazy">
     </figure>
 
   </header>
@@ -41,10 +39,10 @@
       <div class="menu-content">
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="Lieux.html">Lieux</a></li>
-          <li><a href="Culture.html">Culture</a></li>
-          <li><a href="Expressions.html">Expression</a></li>
-          <li><a><button id='changerMode' onclick="changerFeuilleStyle()">Mode</button></a></li>
+          <li><a href="html/Lieux.html">Lieux</a></li>
+          <li><a href="html/Culture.html">Culture</a></li>
+          <li><a href="html/Expressions.html">Expression</a></li>
+          <li><button id='changerMode' onclick="changerFeuilleStyle()">Mode</button></li>
 
         </ul>
       </div>
@@ -55,8 +53,8 @@
 
 
   <h1 id="Titre">Bienvenue à Marseille<br> Entre Ciel, Mer et Culture</h1>
-  <a href="#" id="boutonHaut" class="hidden"><img src="img/monterPage/fleche.png"> </a>
-  </a>
+  <a href="#" id="boutonHaut" class="hidden" aria-label="fleche_top"><img src="img/monterPage/fleche.png"
+      aria-hidden="true" alt="fleche remonte page"></a>
   <article class="description">
     <h2 id="otherTitre">Découvrez Marseille</h2>
     <p>Située sur la côte méditerranéenne de la France, Marseille est la deuxième plus grande ville du pays, après
@@ -73,86 +71,86 @@
       la face cachée de cette ville.<br>Vous pourrez retrouver la vidéo complète sur
       <a href="https://www.youtube.com/watch?v=hXkyfJKTLKk&t=0s">ce lien</a>.<br><br>
 
-      <video controls="controls">
-        <source src="vodMars.mp4" type="video/mp4">
+      <video controls>
+        <source src="video/vodMars.mp4" type="video/mp4">
+        <track src="video/sous_titres.vtt" kind="subtitles" srclang="en-US" label="Anglais" default>
       </video>
     </p>
   </article>
-  </div>
   <article>
     <h2 class="titreSection">Galerie</h2>
     <div class="galerie">
 
       <div class="parent">
-        <img src="./img/imageDeroulante/img1.jpeg" alt="photo galerie">
+        <img src="./img/imageDeroulante/img1.jpeg" alt="photo de Saint Cyr" loading="lazy">
         <h3 class="enfant">Saint Cyr</h3>
       </div>
 
 
       <div class="parent">
-        <img src="./img/imageDeroulante/img2.jpeg" alt="photo galerie">
+        <img src="./img/imageDeroulante/img2.jpeg" alt="photo de Malmousque" loading="lazy">
 
         <h3 class="enfant">Malmousque</h3>
       </div>
 
 
       <div class="parent">
-        <img src="./img/imageDeroulante/img3.jpeg" alt="photo galerie">
+        <img src="./img/imageDeroulante/img3.jpeg" alt="photo metro" loading="lazy">
 
         <h3 class="enfant">Metro Marseillais</h3>
       </div>
 
       <div class="parent">
-        <img src="./img/imageDeroulante/img4.jpeg" alt="photo galerie">
+        <img src="./img/imageDeroulante/img4.jpeg" alt="photo de Malmousque le soir" loading="lazy">
 
         <h3 class="enfant">Malmousque</h3>
       </div>
 
       <div class="parent">
-        <img src="./img/imageDeroulante/img5.jpeg" alt="photo galerie">
+        <img src="./img/imageDeroulante/img5.jpeg" alt="photo de la Corniche" loading="lazy">
 
         <h3 class="enfant">Corniche</h3>
       </div>
       <div class="parent">
-        <img src="./img/imageDeroulante/img6.jpeg" alt="photo galerie">
+        <img src="./img/imageDeroulante/img6.jpeg" alt="photo plage du Prophete" loading="lazy">
         <h3 class="enfant">Plage du Prophète</h3>
       </div>
       <div class="parent">
-        <img src="./img/imageDeroulante/img7.jpeg" alt="photo galerie">
+        <img src="./img/imageDeroulante/img7.jpeg" alt="photo plage du Prado" loading="lazy">
 
         <h3 class="enfant">Plage du Prado</h3>
       </div>
       <div class="parent">
-        <img src="./img/imageDeroulante/img8.jpeg" alt="photo galerie">
+        <img src="./img/imageDeroulante/img8.jpeg" alt="photo du Quartier du Panier" loading="lazy">
 
         <h3 class="enfant">Quartier du Panier</h3>
       </div>
     </div>
   </article>
   <article class='formulaire'>
-    <h3 class='sousTitre'>Laissez nous votre avis !</h3>
+    <h2 class='sousTitre'>Laissez nous votre avis !</h2>
     <form id="form" action="mailto:garyfefe@gmail.com" method="post" enctype="text/plain">
       <p>
         <label for="prenom">Prénom</label>
-        <input id="prenom" type="text" name="prenom" value=" " required="required">
+        <input id="prenom" type="text" name="prenom" required="required">
         <label for="nom">Nom</label>
-        <input id="nom" type="text" name="nom" value=" " required="required"><br>
+        <input id="nom" type="text" name="nom" required="required">
         <label for="email">Email</label>
-        <input id="mail" type="email" name="mail" value=" " required="required"><br>
-
-        <textarea name="impression" rows="2" cols="50" required="required">
-Votre impression sur Marseille...
-   </textarea><br>
-        <input id='enregistre' type="submit" value="Enregistrer">
+        <input id="email" type="email" name="email" required="required">
+        <label for="impression">Avis</label>
+        <textarea id='impression' name="impression" rows="2" cols="50" required="required"
+          placeholder="c'est marseille bb"></textarea>
+        <button type='submit' id='enregistre'>Enregistrer</button>
       </p>
+    </form>
   </article>
-  </form>
   <footer>
-    <h3 class='sousTitre'>NOUS CONTACTER SUR</h3>
+    <h2 class='sousTitre'>NOUS CONTACTER SUR</h2>
     <ul class="contactlist">
       <li>
         <figure>
-          <figcaption><img src="img/contact/telephone.png" alt="telephone" title="0491803889"></figcaption>
+          <figcaption><img src="img/contact/telephone.png" alt="telephone spa" title="+33491803889">
+          </figcaption>
           <!--Numero (en vrai c'est le numero de la spa)-->
         </figure>
       </li>
@@ -167,7 +165,7 @@ Votre impression sur Marseille...
         <figure>
           <figcaption><a
               href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnptqWwXRcDTJdSzJCXNncmzRwNNkMtHJSfbdlNHWxlTClxFhSjXCwwJmgFMTMmhhjFJGc"><img
-                src="img/contact/email-logo-png-27.png" alt="mail" title="felicite.garyy@gmail.com"></a> </figcaption>
+                src="img/contact/email-logo-png-27.png" alt="mail" title="garyfefe@gmail.com"></a> </figcaption>
         </figure>
       </li>
       <li>
@@ -178,6 +176,9 @@ Votre impression sur Marseille...
       </li>
     </ul>
   </footer>
+  <script src="https://replit.com/public/js/replit-badge.js" defer></script>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js" defer></script>
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>
