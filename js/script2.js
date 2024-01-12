@@ -69,7 +69,6 @@ function changerFeuilleStyle() {
 
 
 window.onload = function() {
-  sleep(1000);
   var styleSauvegarde = localStorage.getItem("styleChoisi");
   var lienFeuilleStyle = document.getElementById("style");
 
