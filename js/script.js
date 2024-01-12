@@ -91,9 +91,9 @@ window.onload = function() {
       lienFeuilleStyle.setAttribute("href", "./css/style.css");
     } else if (styleSauvegarde === "../css/style2.css" && nomFichier === "index.html") {
       lienFeuilleStyle.setAttribute("href", "./css/style2.css");
-    } else if (styleSauvegarde === "./css/style.css" && nomFichier != "index.html") {
+    } else if (styleSauvegarde === "./css/style.css" && nomFichier !== "index.html") {
       lienFeuilleStyle.setAttribute("href", "../css/style.css");
-    } else if (styleSauvegarde === "./css/style2.css" && nomFichier != "index.html") {
+    } else if (styleSauvegarde === "./css/style2.css" && nomFichier !== "index.html") {
       lienFeuilleStyle.setAttribute("href", "../css/style2.css");
     } else {
       lienFeuilleStyle.setAttribute("href", styleSauvegarde);
