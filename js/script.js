@@ -83,8 +83,21 @@ window.onload = function() {
   var styleSauvegarde = localStorage.getItem("styleChoisi");
   var lienFeuilleStyle = document.getElementById("style");
 
+  var pageActuelle = window.location.href;
+  var nomFichier = pageActuelle.substring(pageActuelle.lastIndexOf("/") + 1);
+
   if (styleSauvegarde && lienFeuilleStyle) {
-    lienFeuilleStyle.setAttribute("href", styleSauvegarde);
+    if (styleSauvegarde === "../css/style.css" && nomFichier === "index.html") {
+      lienFeuilleStyle.setAttribute("href", "/css/style.css");
+    } else if (styleSauvegarde === "../css/style2.css" && nomFichier === "index.html") {
+      lienFeuilleStyle.setAttribute("href", "/css/style2.css");
+    } else if (styleSauvegarde === "/css/style.css" && nomFichier != "index.html") {
+      lienFeuilleStyle.setAttribute("href", "../css/style.css");
+    } else if (styleSauvegarde === "/css/style2.css" && nomFichier != "index.html") {
+      lienFeuilleStyle.setAttribute("href", "../css/style2.css");
+    } else {
+      lienFeuilleStyle.setAttribute("href", styleSauvegarde);
+    }
   }
 };
 
